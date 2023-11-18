@@ -11,6 +11,7 @@
     "nanoid": "^5.0.3",
     "pino": "^8.16.2",
     "pino-pretty": "^10.2.3",
+    "ts-node": "^10.9.1",
     "yarn": "^1.22.21",
     "zod": "^3.22.4"
   },
@@ -19,6 +20,10 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Urjashee Shaw",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc"
+  },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/body-parser": "^1.19.5",
